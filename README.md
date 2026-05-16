@@ -1,66 +1,43 @@
-## Foundry
+# Decentralized Voting System
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A decentralized voting system built using Solidity for learning and educational purposes.  
+This project demonstrates how blockchain technology and smart contracts can be used to create a transparent, secure, and tamper-resistant voting mechanism.
 
-Foundry consists of:
+---
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+# Features
 
-## Documentation
+- Candidate registration
+- Secure vote casting
+- One vote per wallet address
+- Real-time vote counting
+- Blockchain-based transparency
+- Smart contract ownership and control
+- Immutable voting records
 
-https://book.getfoundry.sh/
+---
 
-## Usage
+# Technologies Used
 
-### Build
+- Solidity
+- Foundry
+- Ethereum Virtual Machine (EVM)
 
-```shell
-$ forge build
-```
+---
 
-### Test
+# Project Structure
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+project/
+│
+├── src/
+│   └── votingProtocol.sol
+│
+├── script/
+│   └── deployVotingProtocol.s.sol
+│
+├── lib/
+│
+├── foundry.toml
+└── README.md
 ```
